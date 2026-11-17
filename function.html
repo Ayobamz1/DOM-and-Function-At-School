@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Funtions</title>
+</head>
+<body>
+    <input type="text" name="" id="input">
+    <div id="display"></div>
+    <button onclick="show()">Show</button>
+
+    <script>
+        function show(){
+            let userName = document.getElementById('input').value
+            let displayArea = document.getElementById('display')
+            // For it to add the inputs on the same line, you use + Concatenation
+            // displayArea.innerHTML += userName  
+
+            // For template neutral, you use +=, ``---back teeth, $--dollar sign and {}--curly braces
+            displayArea.innerHTML += `<h2> ${userName} </h2>`
+        }
+    </script>
+</body>
+</html>

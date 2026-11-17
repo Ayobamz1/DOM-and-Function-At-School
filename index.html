@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <!-- DOM is how we see what we are writing in JS on the browser -->
+    <h1 id="text">Welcome to DOM</h1>
+    <h2 id="small">You are Crazy</h2>
+    <!-- We use id in JS -->
+     <script>
+        document.title = 'Ayobamz'
+        let name = "Ayobamz"
+        document.write(name);
+
+        // document.getElementById('text').innerHTML = 'you are maad!'
+
+        // or 
+
+        // let msG = document.getElementById('text')
+        // msG.innerHTML = "Ayobami Is Here"
+
+        var msF = document.getElementById('small');
+        msF.innerHTML += ' in javascript, Ayobamz is very good';
+        msF.style.color = 'green'
+
+
+        // let a = 10
+        // a+= 15
+        // console.log(a);
+        
+     </script>
+</body>
+</html>
